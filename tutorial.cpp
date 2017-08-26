@@ -5,6 +5,8 @@
 
 using namespace std;
 
+// stocazzo
+
 template <class T>
 vector <T> get_rand_vector(const T & n){
   //std::shared_ptr <int> p = &n; // smart pointer does not need to be deallocated.
@@ -37,14 +39,16 @@ vector <T> apply_fn_to_vector(const vector <T>& v,
   return out;
 }
 
+
 template <class T>
 void print_vec(const vector <T>& v){
   for (auto e:v)
     cout << e << endl;
 }
 
-template <class T>
-void exercise(){
+
+template <class T, class S>
+void exercise(int n, T s){
   //vector <int> v = get_rand_vector(10);                                                                                                   
   auto v = get_rand_vector<T>(10);
 
